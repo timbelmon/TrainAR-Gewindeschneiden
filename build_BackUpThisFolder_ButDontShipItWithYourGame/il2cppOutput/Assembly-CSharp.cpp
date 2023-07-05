@@ -75,8 +75,6 @@ struct Func_2_t42C1DAF0C705F2ED9AA401C8EC87CB051B1E3877;
 struct Func_2_tEDD63467F4E47D482B19167E909053E6D6058882;
 // System.Func`2<UnityEngine.Vector4,UnityEngine.Vector4>
 struct Func_2_t45386234ABB726FFBC7310E0192AE01A58728C52;
-// System.Func`3<UnityEngine.Animation,System.String,System.Boolean>
-struct Func_3_t7FAA54DA5DB384DB2A027B07F65445AD77B7E7BF;
 // System.Func`3<UnityEngine.Animator,System.String,System.Int32>
 struct Func_3_tF3F89E46D8DC6728F8F96316B5ADC4B3BC511FC7;
 // System.Func`3<UnityEngine.Bounds,UnityEngine.Bounds,System.Boolean>
@@ -139,12 +137,8 @@ struct Func_3_t3545AF65E5361B1A1B2E1997559CBD6944BFD979;
 struct InstanceActionInvoker_3_t3D0B618CB4EFEDEF0E20A76A015833957FBCCCEA;
 // Unity.VisualScripting.InstanceActionInvoker`3<System.Object,System.Object,System.Int32>
 struct InstanceActionInvoker_3_t3699B172D2818DCE11E7CEA0BF2C262B05CAEA3E;
-// Unity.VisualScripting.InstanceFunctionInvoker`3<UnityEngine.Animation,System.String,System.Boolean>
-struct InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B;
 // Unity.VisualScripting.InstanceFunctionInvoker`3<UnityEngine.Animator,System.String,System.Int32>
 struct InstanceFunctionInvoker_3_tB9266CC39E44E20FE7701D6D0CC77A86A4EDE77B;
-// Unity.VisualScripting.InstanceFunctionInvoker`3<System.Object,System.Object,System.Boolean>
-struct InstanceFunctionInvoker_3_t630BED32D89910F9E9832FF8A9D369AF4BF477A8;
 // Unity.VisualScripting.InstanceFunctionInvoker`3<System.Object,System.Object,System.Int32>
 struct InstanceFunctionInvoker_3_t1EE8CA622DD980887DDEAC348EB7F09047B58559;
 // Unity.VisualScripting.StaticFunctionInvoker`2<UnityEngine.Color,UnityEngine.Vector4>
@@ -235,8 +229,6 @@ struct StaticFunctionInvoker_3_t42FBD76F491C70019BCE97A99FDF0478C101F625;
 struct StaticFunctionInvoker_3_tC118F4A2139AE10831743519EF1EEB05A10ED993;
 // Unity.VisualScripting.StaticFunctionInvoker`3<UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4>
 struct StaticFunctionInvoker_3_t371273EBED66F18553D52FB313C6CD6CB4FAE8A1;
-// UnityEngine.Animation
-struct Animation_t6593B06C39E3B139808B19F2C719C860F3F61040;
 // UnityEngine.Animator
 struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
 // Unity.VisualScripting.Generated.Aot.AotStubs
@@ -255,7 +247,6 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 IL2CPP_EXTERN_C RuntimeClass* Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Color_tD001788D726C3A7F1379BEED0260B9591F440C1F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InstanceActionInvoker_3_t3D0B618CB4EFEDEF0E20A76A015833957FBCCCEA_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InstanceFunctionInvoker_3_tB9266CC39E44E20FE7701D6D0CC77A86A4EDE77B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB_il2cpp_TypeInfo_var;
@@ -313,7 +304,6 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InstanceActionInvoker_3__ctor_m191C4D00ACCEEB98DE47A0B72561B7B2DA8C60B9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InstanceFunctionInvoker_3__ctor_mCB3E201D0B913F7B359C142425BCF9C2EFA11153_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* InstanceFunctionInvoker_3__ctor_mE77D02F98C92C181F5941F4D50AD1AE3AF84B513_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StaticFunctionInvoker_2__ctor_m1C45147722AEA13B00A0DCA8977277AE365DD0BF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StaticFunctionInvoker_2__ctor_m21B946FBA35597B95D0DA4065594132F85EB8B75_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StaticFunctionInvoker_2__ctor_m277DF82203B3B9E5EA09492A05191F0510F80C68_RuntimeMethod_var;
@@ -412,11 +402,6 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 };
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
-{
-};
-
-// Unity.VisualScripting.InstanceInvokerBase`1<UnityEngine.Animation>
-struct InstanceInvokerBase_1_tCC2476DA6F90B5FFD40861DB38D28C175203F047  : public InvokerBase_t7EAFB932168B4166A9D41BF15E3DF2160743B778
 {
 };
 
@@ -687,11 +672,6 @@ struct InstanceActionInvokerBase_1_t0E7B9EB3902B8C182D5022D96333F87A11D840AC  : 
 {
 };
 
-// Unity.VisualScripting.InstanceFunctionInvokerBase`2<UnityEngine.Animation,System.Boolean>
-struct InstanceFunctionInvokerBase_2_t5C5F13378A4774CF85F997604E33D8E712CFA756  : public InstanceInvokerBase_1_tCC2476DA6F90B5FFD40861DB38D28C175203F047
-{
-};
-
 // Unity.VisualScripting.InstanceFunctionInvokerBase`2<UnityEngine.Animator,System.Int32>
 struct InstanceFunctionInvokerBase_2_t803DCD69B25E9FDDA66A6FE77CEF674271EEE28A  : public InstanceInvokerBase_1_tC01E695B92B03A32835E39DE0B97E66B4737E23F
 {
@@ -801,13 +781,6 @@ struct InstanceActionInvoker_3_t3D0B618CB4EFEDEF0E20A76A015833957FBCCCEA  : publ
 {
 	// System.Action`3<TTarget,TParam0,TParam1> Unity.VisualScripting.InstanceActionInvoker`3::invoke
 	Action_3_t677FC4C872C94744CBAA976048A25ECABDAAF2D4* ___invoke_2;
-};
-
-// Unity.VisualScripting.InstanceFunctionInvoker`3<UnityEngine.Animation,System.String,System.Boolean>
-struct InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B  : public InstanceFunctionInvokerBase_2_t5C5F13378A4774CF85F997604E33D8E712CFA756
-{
-	// System.Func`3<TTarget,TParam0,TResult> Unity.VisualScripting.InstanceFunctionInvoker`3::invoke
-	Func_3_t7FAA54DA5DB384DB2A027B07F65445AD77B7E7BF* ___invoke_2;
 };
 
 // Unity.VisualScripting.InstanceFunctionInvoker`3<UnityEngine.Animator,System.String,System.Int32>
@@ -1121,11 +1094,6 @@ struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t
 {
 };
 
-// UnityEngine.Animation
-struct Animation_t6593B06C39E3B139808B19F2C719C860F3F61040  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
-{
-};
-
 // UnityEngine.Animator
 struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
@@ -1221,8 +1189,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StaticFunctionInvoker_2__ctor_mA3962E648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InstanceFunctionInvoker_3__ctor_m19A6E9B204694E40BEF97384341819660BF87D3C_gshared (InstanceFunctionInvoker_3_t1EE8CA622DD980887DDEAC348EB7F09047B58559* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method) ;
 // System.Void Unity.VisualScripting.InstanceActionInvoker`3<System.Object,System.Object,System.Int32>::.ctor(System.Reflection.MethodInfo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InstanceActionInvoker_3__ctor_m8C2D87F94BF406CF10428075FD42C9CAF21A8FCD_gshared (InstanceActionInvoker_3_t3699B172D2818DCE11E7CEA0BF2C262B05CAEA3E* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method) ;
-// System.Void Unity.VisualScripting.InstanceFunctionInvoker`3<System.Object,System.Object,System.Boolean>::.ctor(System.Reflection.MethodInfo)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InstanceFunctionInvoker_3__ctor_m984D304FAD3312D7AD16E94AFF978C7F2AFF9F7D_gshared (InstanceFunctionInvoker_3_t630BED32D89910F9E9832FF8A9D369AF4BF477A8* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method) ;
 
 // System.Boolean System.String::op_Equality(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m0D685A924E5CD78078F248ED1726DA5A9D7D6AC0 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
@@ -1567,13 +1533,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetInteger_m7B4BB5FD5BD8DE3F713
 inline void InstanceActionInvoker_3__ctor_m191C4D00ACCEEB98DE47A0B72561B7B2DA8C60B9 (InstanceActionInvoker_3_t3D0B618CB4EFEDEF0E20A76A015833957FBCCCEA* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method)
 {
 	((  void (*) (InstanceActionInvoker_3_t3D0B618CB4EFEDEF0E20A76A015833957FBCCCEA*, MethodInfo_t*, const RuntimeMethod*))InstanceActionInvoker_3__ctor_m8C2D87F94BF406CF10428075FD42C9CAF21A8FCD_gshared)(__this, ___methodInfo0, method);
-}
-// System.Boolean UnityEngine.Animation::Play(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Animation_Play_m95CC43633DC2B587AB3A0D1FF5F93B863A5440D5 (Animation_t6593B06C39E3B139808B19F2C719C860F3F61040* __this, String_t* ___animation0, const RuntimeMethod* method) ;
-// System.Void Unity.VisualScripting.InstanceFunctionInvoker`3<UnityEngine.Animation,System.String,System.Boolean>::.ctor(System.Reflection.MethodInfo)
-inline void InstanceFunctionInvoker_3__ctor_mE77D02F98C92C181F5941F4D50AD1AE3AF84B513 (InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B* __this, MethodInfo_t* ___methodInfo0, const RuntimeMethod* method)
-{
-	((  void (*) (InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B*, MethodInfo_t*, const RuntimeMethod*))InstanceFunctionInvoker_3__ctor_m984D304FAD3312D7AD16E94AFF978C7F2AFF9F7D_gshared)(__this, ___methodInfo0, method);
 }
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -41376,44 +41335,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_Animator_SetInteger
 		NullCheck(L_3);
 		RuntimeObject* L_9;
 		L_9 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(14 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object) */, L_3, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Unity.VisualScripting.Generated.Aot.AotStubs::UnityEngine_Animation_Play()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AotStubs_UnityEngine_Animation_Play_mD2A67E2F4E33EC53E205CE6CEF5F58E07B8CFF4F (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InstanceFunctionInvoker_3__ctor_mE77D02F98C92C181F5941F4D50AD1AE3AF84B513_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	String_t* V_0 = NULL;
-	{
-		// global::UnityEngine.Animation target = default(global::UnityEngine.Animation);
-		// string arg0 = default(string);
-		V_0 = (String_t*)NULL;
-		// target.Play(arg0);
-		String_t* L_0 = V_0;
-		NullCheck((Animation_t6593B06C39E3B139808B19F2C719C860F3F61040*)NULL);
-		bool L_1;
-		L_1 = Animation_Play_m95CC43633DC2B587AB3A0D1FF5F93B863A5440D5((Animation_t6593B06C39E3B139808B19F2C719C860F3F61040*)NULL, L_0, NULL);
-		// global::Unity.VisualScripting.InstanceFunctionInvoker<UnityEngine.Animation, string, bool> optimized = new global::Unity.VisualScripting.InstanceFunctionInvoker<UnityEngine.Animation, string, bool>(default(global::System.Reflection.MethodInfo));
-		InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B* L_2 = (InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B*)il2cpp_codegen_object_new(InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B_il2cpp_TypeInfo_var);
-		NullCheck(L_2);
-		InstanceFunctionInvoker_3__ctor_mE77D02F98C92C181F5941F4D50AD1AE3AF84B513(L_2, (MethodInfo_t*)NULL, InstanceFunctionInvoker_3__ctor_mE77D02F98C92C181F5941F4D50AD1AE3AF84B513_RuntimeMethod_var);
-		// optimized.Invoke(default(global::UnityEngine.Animation), arg0);
-		InstanceFunctionInvoker_3_t05E126538E41C0B2C87E33E36148747D96CB9E1B* L_3 = L_2;
-		String_t* L_4 = V_0;
-		NullCheck(L_3);
-		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker2< RuntimeObject*, RuntimeObject*, RuntimeObject* >::Invoke(15 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object,System.Object) */, L_3, NULL, L_4);
-		// optimized.Invoke(default(object[]));
-		NullCheck(L_3);
-		RuntimeObject* L_6;
-		L_6 = VirtualFuncInvoker1< RuntimeObject*, RuntimeObject* >::Invoke(14 /* System.Object Unity.VisualScripting.InvokerBase::Invoke(System.Object) */, L_3, NULL);
 		// }
 		return;
 	}
