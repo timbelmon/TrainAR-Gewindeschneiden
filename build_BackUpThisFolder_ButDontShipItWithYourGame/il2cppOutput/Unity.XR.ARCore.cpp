@@ -21438,7 +21438,13 @@ void CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F5612
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___resultCallback0, ___context1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_Open(CameraPermissionRequestProviderDelegate_tFCE114BFEABC92ACE4DB52056099D3C64BDE8438* __this, CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587* ___resultCallback0, intptr_t ___context1, const RuntimeMethod* method)
+void CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_OpenInst(CameraPermissionRequestProviderDelegate_tFCE114BFEABC92ACE4DB52056099D3C64BDE8438* __this, CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587* ___resultCallback0, intptr_t ___context1, const RuntimeMethod* method)
+{
+	NullCheck(___resultCallback0);
+	typedef void (*FunctionPointerType) (CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587*, intptr_t, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___resultCallback0, ___context1, method);
+}
+void CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_OpenStatic(CameraPermissionRequestProviderDelegate_tFCE114BFEABC92ACE4DB52056099D3C64BDE8438* __this, CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587* ___resultCallback0, intptr_t ___context1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587*, intptr_t, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___resultCallback0, ___context1, method);
@@ -21468,7 +21474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraPermissionRequestProviderDelegate_
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_Open;
+			__this->___invoke_impl_1 = (intptr_t)&CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21480,10 +21486,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraPermissionRequestProviderDelegate_
 		bool isOpen = parameterCount == 1;
 		if (isOpen)
 		{
-			__this->___invoke_impl_1 = (intptr_t)&CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_Open;
+			__this->___invoke_impl_1 = (intptr_t)&CameraPermissionRequestProviderDelegate_Invoke_m05261FB991CE8933EA8041F56122E659E160E68E_OpenInst;
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -21534,7 +21542,12 @@ void CameraPermissionsResultCallbackDelegate_Invoke_m1BB16747C0F77B3FB2038F05EFB
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___granted0, ___context1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void CameraPermissionsResultCallbackDelegate_Invoke_m1BB16747C0F77B3FB2038F05EFB05E21F9100AE4_Open(CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587* __this, bool ___granted0, intptr_t ___context1, const RuntimeMethod* method)
+void CameraPermissionsResultCallbackDelegate_Invoke_m1BB16747C0F77B3FB2038F05EFB05E21F9100AE4_OpenInst(CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587* __this, bool ___granted0, intptr_t ___context1, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (bool, intptr_t, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___granted0, ___context1, method);
+}
+void CameraPermissionsResultCallbackDelegate_Invoke_m1BB16747C0F77B3FB2038F05EFB05E21F9100AE4_OpenStatic(CameraPermissionsResultCallbackDelegate_t90FC9D7A14473EF3629452E353498B5EFA3EF587* __this, bool ___granted0, intptr_t ___context1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (bool, intptr_t, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___granted0, ___context1, method);
@@ -21560,7 +21573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraPermissionsResultCallbackDelegate_
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&CameraPermissionsResultCallbackDelegate_Invoke_m1BB16747C0F77B3FB2038F05EFB05E21F9100AE4_Open;
+			__this->___invoke_impl_1 = (intptr_t)&CameraPermissionsResultCallbackDelegate_Invoke_m1BB16747C0F77B3FB2038F05EFB05E21F9100AE4_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21569,6 +21582,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CameraPermissionsResultCallbackDelegate_
 	}
 	else
 	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}

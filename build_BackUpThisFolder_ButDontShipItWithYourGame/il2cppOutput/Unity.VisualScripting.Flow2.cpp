@@ -11301,7 +11301,13 @@ void EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_Mu
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___flow0, ___name1, ___args2, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_Open(EvaluateFunctionHandler_t59671FDA4EF19C9CCD0D4C22D2B28AC3F451A8B9* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___flow0, String_t* ___name1, FunctionArgs_t43FEB586BCBF9C695081C41A2A3F134F1B689D0B* ___args2, const RuntimeMethod* method)
+void EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_OpenInst(EvaluateFunctionHandler_t59671FDA4EF19C9CCD0D4C22D2B28AC3F451A8B9* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___flow0, String_t* ___name1, FunctionArgs_t43FEB586BCBF9C695081C41A2A3F134F1B689D0B* ___args2, const RuntimeMethod* method)
+{
+	NullCheck(___flow0);
+	typedef void (*FunctionPointerType) (Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582*, String_t*, FunctionArgs_t43FEB586BCBF9C695081C41A2A3F134F1B689D0B*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___flow0, ___name1, ___args2, method);
+}
+void EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_OpenStatic(EvaluateFunctionHandler_t59671FDA4EF19C9CCD0D4C22D2B28AC3F451A8B9* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___flow0, String_t* ___name1, FunctionArgs_t43FEB586BCBF9C695081C41A2A3F134F1B689D0B* ___args2, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582*, String_t*, FunctionArgs_t43FEB586BCBF9C695081C41A2A3F134F1B689D0B*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___flow0, ___name1, ___args2, method);
@@ -11319,7 +11325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EvaluateFunctionHandler__ctor_m64ED74FD9
 	{
 		bool isOpen = parameterCount == 3;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_Open;
+			__this->___invoke_impl_1 = (intptr_t)&EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -11331,10 +11337,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EvaluateFunctionHandler__ctor_m64ED74FD9
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
 		{
-			__this->___invoke_impl_1 = (intptr_t)&EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_Open;
+			__this->___invoke_impl_1 = (intptr_t)&EvaluateFunctionHandler_Invoke_m33DD845F86502F84B5A5E76F3E5C216C673C61A4_OpenInst;
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -11380,7 +11388,13 @@ void EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_M
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___flow0, ___name1, ___args2, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_Open(EvaluateParameterHandler_tD8C167EC3626981A9F4467387838CE9648FE7BAF* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___flow0, String_t* ___name1, ParameterArgs_t6F99757E4429D71D057F5A21D287F4F0E57D7957* ___args2, const RuntimeMethod* method)
+void EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_OpenInst(EvaluateParameterHandler_tD8C167EC3626981A9F4467387838CE9648FE7BAF* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___flow0, String_t* ___name1, ParameterArgs_t6F99757E4429D71D057F5A21D287F4F0E57D7957* ___args2, const RuntimeMethod* method)
+{
+	NullCheck(___flow0);
+	typedef void (*FunctionPointerType) (Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582*, String_t*, ParameterArgs_t6F99757E4429D71D057F5A21D287F4F0E57D7957*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___flow0, ___name1, ___args2, method);
+}
+void EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_OpenStatic(EvaluateParameterHandler_tD8C167EC3626981A9F4467387838CE9648FE7BAF* __this, Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582* ___flow0, String_t* ___name1, ParameterArgs_t6F99757E4429D71D057F5A21D287F4F0E57D7957* ___args2, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (Flow_tC370BDFF173D53E274F883ED6ADAFE29B049C582*, String_t*, ParameterArgs_t6F99757E4429D71D057F5A21D287F4F0E57D7957*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___flow0, ___name1, ___args2, method);
@@ -11398,7 +11412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EvaluateParameterHandler__ctor_m7D33238E
 	{
 		bool isOpen = parameterCount == 3;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_Open;
+			__this->___invoke_impl_1 = (intptr_t)&EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -11410,10 +11424,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EvaluateParameterHandler__ctor_m7D33238E
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
 		{
-			__this->___invoke_impl_1 = (intptr_t)&EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_Open;
+			__this->___invoke_impl_1 = (intptr_t)&EvaluateParameterHandler_Invoke_m6272BF438298E9208B67AF9449522C2E1401D400_OpenInst;
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}

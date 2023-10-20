@@ -21025,25 +21025,35 @@ void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___sender0, ___e1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_Open(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
+void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenInst(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
+{
+	NullCheck(___sender0);
+	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
+}
+void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenStatic(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
 }
 void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenVirtual(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	VirtualActionInvoker1< MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* >::Invoke(il2cpp_codegen_method_get_slot(method), ___sender0, ___e1);
 }
 void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenInterface(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	InterfaceActionInvoker1< MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___sender0, ___e1);
 }
 void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenGenericVirtual(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericVirtualActionInvoker1< MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* >::Invoke(method, ___sender0, ___e1);
 }
 void MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenGenericInterface(MqttMsgPublishEventHandler_tBCAD35B8629567A9399A1046919F651E87E4E980* __this, RuntimeObject* ___sender0, MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericInterfaceActionInvoker1< MqttMsgPublishEventArgs_t4940EC834EA01038279DD241A6F96F73C223CB0B* >::Invoke(method, ___sender0, ___e1);
 }
 // System.Void uPLibrary.Networking.M2Mqtt.MqttClient/MqttMsgPublishEventHandler::.ctor(System.Object,System.IntPtr)
@@ -21059,7 +21069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgPublishEventHandler__ctor_mFBFEDB
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_Open;
+			__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21086,11 +21096,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgPublishEventHandler__ctor_mFBFEDB
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_Open;
+				__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishEventHandler_Invoke_mE0B775229BA8B6E3E37C0BD08DB04F90FDB3A9DD_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -21135,25 +21147,35 @@ void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___sender0, ___e1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_Open(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
+void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenInst(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
+{
+	NullCheck(___sender0);
+	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
+}
+void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenStatic(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
 }
 void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenVirtual(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	VirtualActionInvoker1< MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* >::Invoke(il2cpp_codegen_method_get_slot(method), ___sender0, ___e1);
 }
 void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenInterface(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	InterfaceActionInvoker1< MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___sender0, ___e1);
 }
 void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenGenericVirtual(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericVirtualActionInvoker1< MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* >::Invoke(method, ___sender0, ___e1);
 }
 void MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenGenericInterface(MqttMsgPublishedEventHandler_t6BF0DBD1EF3164F4B7EEA18BF70DC1736712792F* __this, RuntimeObject* ___sender0, MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericInterfaceActionInvoker1< MqttMsgPublishedEventArgs_t8E13328196C17B2D79751AB851666268175DA0B0* >::Invoke(method, ___sender0, ___e1);
 }
 // System.Void uPLibrary.Networking.M2Mqtt.MqttClient/MqttMsgPublishedEventHandler::.ctor(System.Object,System.IntPtr)
@@ -21169,7 +21191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgPublishedEventHandler__ctor_m6945
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_Open;
+			__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21196,11 +21218,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgPublishedEventHandler__ctor_m6945
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_Open;
+				__this->___invoke_impl_1 = (intptr_t)&MqttMsgPublishedEventHandler_Invoke_m994FA478E7F46B2EB24A7736DCFEDC5086F1EE42_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -21245,25 +21269,35 @@ void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___sender0, ___e1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_Open(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
+void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenInst(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
+{
+	NullCheck(___sender0);
+	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
+}
+void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenStatic(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
 }
 void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenVirtual(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	VirtualActionInvoker1< MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* >::Invoke(il2cpp_codegen_method_get_slot(method), ___sender0, ___e1);
 }
 void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenInterface(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	InterfaceActionInvoker1< MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___sender0, ___e1);
 }
 void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenGenericVirtual(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericVirtualActionInvoker1< MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* >::Invoke(method, ___sender0, ___e1);
 }
 void MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenGenericInterface(MqttMsgSubscribedEventHandler_t51ACF2E662CF61FA3E36E25F3B1C552BDC250F99* __this, RuntimeObject* ___sender0, MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericInterfaceActionInvoker1< MqttMsgSubscribedEventArgs_t8207BBB67D20AE8E6F8F2F3531852BC9D27C6120* >::Invoke(method, ___sender0, ___e1);
 }
 // System.Void uPLibrary.Networking.M2Mqtt.MqttClient/MqttMsgSubscribedEventHandler::.ctor(System.Object,System.IntPtr)
@@ -21279,7 +21313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgSubscribedEventHandler__ctor_m586
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_Open;
+			__this->___invoke_impl_1 = (intptr_t)&MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21306,11 +21340,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgSubscribedEventHandler__ctor_m586
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_Open;
+				__this->___invoke_impl_1 = (intptr_t)&MqttMsgSubscribedEventHandler_Invoke_mBE40FC2FECB03C26F45A4364B9C5AE46E3C7B182_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -21355,25 +21391,35 @@ void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA301
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___sender0, ___e1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_Open(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
+void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenInst(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
+{
+	NullCheck(___sender0);
+	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
+}
+void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenStatic(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
 }
 void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenVirtual(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	VirtualActionInvoker1< MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* >::Invoke(il2cpp_codegen_method_get_slot(method), ___sender0, ___e1);
 }
 void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenInterface(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	InterfaceActionInvoker1< MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___sender0, ___e1);
 }
 void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenGenericVirtual(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericVirtualActionInvoker1< MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* >::Invoke(method, ___sender0, ___e1);
 }
 void MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenGenericInterface(MqttMsgUnsubscribedEventHandler_t81DCAEE1ACD81DA4F5ED0BBF0AF9A3160E2A38C6* __this, RuntimeObject* ___sender0, MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericInterfaceActionInvoker1< MqttMsgUnsubscribedEventArgs_t46F3D712F85B4F54BD19B4355690C775FAC35E5D* >::Invoke(method, ___sender0, ___e1);
 }
 // System.Void uPLibrary.Networking.M2Mqtt.MqttClient/MqttMsgUnsubscribedEventHandler::.ctor(System.Object,System.IntPtr)
@@ -21389,7 +21435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgUnsubscribedEventHandler__ctor_m6
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_Open;
+			__this->___invoke_impl_1 = (intptr_t)&MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21416,11 +21462,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MqttMsgUnsubscribedEventHandler__ctor_m6
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_Open;
+				__this->___invoke_impl_1 = (intptr_t)&MqttMsgUnsubscribedEventHandler_Invoke_m8B55D423BFAB845500509CA6BA565DBA3015FD5A_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -21465,25 +21513,35 @@ void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___sender0, ___e1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_Open(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
+void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenInst(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
+{
+	NullCheck(___sender0);
+	typedef void (*FunctionPointerType) (RuntimeObject*, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
+}
+void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenStatic(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___sender0, ___e1, method);
 }
 void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenVirtual(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	VirtualActionInvoker1< EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* >::Invoke(il2cpp_codegen_method_get_slot(method), ___sender0, ___e1);
 }
 void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenInterface(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	InterfaceActionInvoker1< EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___sender0, ___e1);
 }
 void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenGenericVirtual(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericVirtualActionInvoker1< EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* >::Invoke(method, ___sender0, ___e1);
 }
 void ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenGenericInterface(ConnectionClosedEventHandler_tBD7E84CE873F156CDB3DD478D665FB83BD81F030* __this, RuntimeObject* ___sender0, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___e1, const RuntimeMethod* method)
 {
+	NullCheck(___sender0);
 	GenericInterfaceActionInvoker1< EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* >::Invoke(method, ___sender0, ___e1);
 }
 // System.Void uPLibrary.Networking.M2Mqtt.MqttClient/ConnectionClosedEventHandler::.ctor(System.Object,System.IntPtr)
@@ -21499,7 +21557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConnectionClosedEventHandler__ctor_mC903
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_Open;
+			__this->___invoke_impl_1 = (intptr_t)&ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -21526,11 +21584,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConnectionClosedEventHandler__ctor_mC903
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_Open;
+				__this->___invoke_impl_1 = (intptr_t)&ConnectionClosedEventHandler_Invoke_m9CFA11DC7558238090477670C7F06A875954DB19_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -22595,25 +22655,35 @@ bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_Multicast(Q
 	}
 	return retVal;
 }
-bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_Open(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
+bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenInst(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
+{
+	NullCheck(___item0);
+	typedef bool (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___item0, method);
+}
+bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenStatic(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
 {
 	typedef bool (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr_0)(___item0, method);
 }
 bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenVirtual(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
 {
+	NullCheck(___item0);
 	return VirtualFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(method), ___item0);
 }
 bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenInterface(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
 {
+	NullCheck(___item0);
 	return InterfaceFuncInvoker0< bool >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___item0);
 }
 bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenGenericVirtual(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
 {
+	NullCheck(___item0);
 	return GenericVirtualFuncInvoker0< bool >::Invoke(method, ___item0);
 }
 bool QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenGenericInterface(QueuePredicate_t80D663FACD523CFD0EF1826C059C8676D16E7961* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
 {
+	NullCheck(___item0);
 	return GenericInterfaceFuncInvoker0< bool >::Invoke(method, ___item0);
 }
 // System.Void uPLibrary.Networking.M2Mqtt.Utility.QueueExtension/QueuePredicate::.ctor(System.Object,System.IntPtr)
@@ -22629,7 +22699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QueuePredicate__ctor_mD81E57F512D7764520
 	{
 		bool isOpen = parameterCount == 1;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_Open;
+			__this->___invoke_impl_1 = (intptr_t)&QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -22656,11 +22726,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QueuePredicate__ctor_mD81E57F512D7764520
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_Open;
+				__this->___invoke_impl_1 = (intptr_t)&QueuePredicate_Invoke_mBDAB5063584DC494848A6B360E575AD768B59A57_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -22705,7 +22777,13 @@ void WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_Multicast(Write
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___format0, ___args1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_Open(WriteTrace_tCFF20E10EDE427AC04F5962C5203AAE861C546A9* __this, String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method)
+void WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_OpenInst(WriteTrace_tCFF20E10EDE427AC04F5962C5203AAE861C546A9* __this, String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method)
+{
+	NullCheck(___format0);
+	typedef void (*FunctionPointerType) (String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___format0, ___args1, method);
+}
+void WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_OpenStatic(WriteTrace_tCFF20E10EDE427AC04F5962C5203AAE861C546A9* __this, String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___format0, ___args1, method);
@@ -22723,7 +22801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteTrace__ctor_m2EE3BE67838BD364984CC6
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_Open;
+			__this->___invoke_impl_1 = (intptr_t)&WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -22735,10 +22813,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteTrace__ctor_m2EE3BE67838BD364984CC6
 		bool isOpen = parameterCount == 1;
 		if (isOpen)
 		{
-			__this->___invoke_impl_1 = (intptr_t)&WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_Open;
+			__this->___invoke_impl_1 = (intptr_t)&WriteTrace_Invoke_mFE650B81232ABC5DF50C8A9D6B7BCE3670E4D05A_OpenInst;
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}

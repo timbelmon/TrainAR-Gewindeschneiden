@@ -6284,7 +6284,12 @@ MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9* Allocator_Invoke_mCBC42
 	}
 	return retVal;
 }
-MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9* Allocator_Invoke_mCBC42ABCC9E1CDBD31724B53430EE6271DD256A7_Open(Allocator_t084692CDDE70825875BA4EC825D124E0BF9355D3* __this, uint32_t ___vertexCount0, uint32_t ___indexCount1, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0* ___allocatorData2, const RuntimeMethod* method)
+MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9* Allocator_Invoke_mCBC42ABCC9E1CDBD31724B53430EE6271DD256A7_OpenInst(Allocator_t084692CDDE70825875BA4EC825D124E0BF9355D3* __this, uint32_t ___vertexCount0, uint32_t ___indexCount1, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0* ___allocatorData2, const RuntimeMethod* method)
+{
+	typedef MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9* (*FunctionPointerType) (uint32_t, uint32_t, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0*, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___vertexCount0, ___indexCount1, ___allocatorData2, method);
+}
+MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9* Allocator_Invoke_mCBC42ABCC9E1CDBD31724B53430EE6271DD256A7_OpenStatic(Allocator_t084692CDDE70825875BA4EC825D124E0BF9355D3* __this, uint32_t ___vertexCount0, uint32_t ___indexCount1, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0* ___allocatorData2, const RuntimeMethod* method)
 {
 	typedef MeshWriteData_tE09883A6419D2A92CC453702AD6D30486B44F5F9* (*FunctionPointerType) (uint32_t, uint32_t, AllocMeshData_t2A9D421887B81E659406F225BE007B9CD4FC1AA0*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr_0)(___vertexCount0, ___indexCount1, ___allocatorData2, method);
@@ -6302,7 +6307,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Allocator__ctor_m9AAA6A0F5FC11C644C1039B
 	{
 		bool isOpen = parameterCount == 3;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&Allocator_Invoke_mCBC42ABCC9E1CDBD31724B53430EE6271DD256A7_Open;
+			__this->___invoke_impl_1 = (intptr_t)&Allocator_Invoke_mCBC42ABCC9E1CDBD31724B53430EE6271DD256A7_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -6311,6 +6316,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Allocator__ctor_m9AAA6A0F5FC11C644C1039B
 	}
 	else
 	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}

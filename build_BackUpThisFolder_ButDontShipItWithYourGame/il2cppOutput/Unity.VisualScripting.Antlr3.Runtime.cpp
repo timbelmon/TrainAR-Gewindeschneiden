@@ -8725,25 +8725,35 @@ int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DE
 	}
 	return retVal;
 }
-int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_Open(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
+int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenInst(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
+{
+	NullCheck(___dfa0);
+	typedef int32_t (*FunctionPointerType) (DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F*, int32_t, RuntimeObject*, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___dfa0, ___s1, ___input2, method);
+}
+int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenStatic(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
 {
 	typedef int32_t (*FunctionPointerType) (DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F*, int32_t, RuntimeObject*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr_0)(___dfa0, ___s1, ___input2, method);
 }
 int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenVirtual(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
 {
+	NullCheck(___dfa0);
 	return VirtualFuncInvoker2< int32_t, int32_t, RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___dfa0, ___s1, ___input2);
 }
 int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenInterface(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
 {
+	NullCheck(___dfa0);
 	return InterfaceFuncInvoker2< int32_t, int32_t, RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___dfa0, ___s1, ___input2);
 }
 int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenGenericVirtual(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
 {
+	NullCheck(___dfa0);
 	return GenericVirtualFuncInvoker2< int32_t, int32_t, RuntimeObject* >::Invoke(method, ___dfa0, ___s1, ___input2);
 }
 int32_t SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenGenericInterface(SpecialStateTransitionHandler_t580B77F22520338A17D0E305DA6ADAA39AF0FB9E* __this, DFA_t68E40FB2261FCCE22383DC845FCC24D69A0A067F* ___dfa0, int32_t ___s1, RuntimeObject* ___input2, const RuntimeMethod* method)
 {
+	NullCheck(___dfa0);
 	return GenericInterfaceFuncInvoker2< int32_t, int32_t, RuntimeObject* >::Invoke(method, ___dfa0, ___s1, ___input2);
 }
 // System.Void Unity.VisualScripting.Antlr3.Runtime.DFA/SpecialStateTransitionHandler::.ctor(System.Object,System.IntPtr)
@@ -8759,7 +8769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialStateTransitionHandler__ctor_m76C
 	{
 		bool isOpen = parameterCount == 3;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_Open;
+			__this->___invoke_impl_1 = (intptr_t)&SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -8786,11 +8796,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpecialStateTransitionHandler__ctor_m76C
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_Open;
+				__this->___invoke_impl_1 = (intptr_t)&SpecialStateTransitionHandler_Invoke_mCD06B32AE87FDF740360A37D4043D849DEA3ABE2_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -23915,7 +23927,12 @@ void SynPredPointer_Invoke_mE0790978B40F4C8E5369F513A33A2B42ACAAF5FF_Multicast(S
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void SynPredPointer_Invoke_mE0790978B40F4C8E5369F513A33A2B42ACAAF5FF_Open(SynPredPointer_t8748EEBCE3036525B0BBBF69799BD5C7B27DFB1E* __this, const RuntimeMethod* method)
+void SynPredPointer_Invoke_mE0790978B40F4C8E5369F513A33A2B42ACAAF5FF_OpenInst(SynPredPointer_t8748EEBCE3036525B0BBBF69799BD5C7B27DFB1E* __this, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(method);
+}
+void SynPredPointer_Invoke_mE0790978B40F4C8E5369F513A33A2B42ACAAF5FF_OpenStatic(SynPredPointer_t8748EEBCE3036525B0BBBF69799BD5C7B27DFB1E* __this, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(method);
@@ -23941,7 +23958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SynPredPointer__ctor_m81CD718522D1F0CD06
 	{
 		bool isOpen = parameterCount == 0;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&SynPredPointer_Invoke_mE0790978B40F4C8E5369F513A33A2B42ACAAF5FF_Open;
+			__this->___invoke_impl_1 = (intptr_t)&SynPredPointer_Invoke_mE0790978B40F4C8E5369F513A33A2B42ACAAF5FF_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -23950,6 +23967,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SynPredPointer__ctor_m81CD718522D1F0CD06
 	}
 	else
 	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}

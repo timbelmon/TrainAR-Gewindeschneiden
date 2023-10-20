@@ -9592,25 +9592,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A44557
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_Open(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenInst(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenStatic(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenVirtual(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenInterface(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_tFB7E540AF00A0CBCE5E8205B659E787079B2825E* __this, BaseCompositeField_3_t9F5F0841A66BBB8FDCD321F0944E362CAD139BA9* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.Rect,System.Object,System.Single>::.ctor(System.Object,System.IntPtr)
@@ -9626,7 +9636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -9653,11 +9663,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mAE49A1D8CF2FDFB110D8A445575CBF22E85B7A94_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -9689,25 +9701,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F905
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_Open(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenInst(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenStatic(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenVirtual(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenInterface(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_t6117077B6218C4DE2925EB4B4EF82F601C46D45A* __this, BaseCompositeField_3_tEF777D7BCB7EC85FBAAB0AE4818F80D4B884E541* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.RectInt,System.Object,System.Int32>::.ctor(System.Object,System.IntPtr)
@@ -9723,7 +9745,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -9750,11 +9772,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mD85DF712B1DC4FCA57D509F9059CF60EAF705D65_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -9786,25 +9810,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F3
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_Open(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenInst(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenStatic(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenVirtual(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenInterface(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_t9BFA9041F7BB9115A9070A61126BEDF96EADB02A* __this, BaseCompositeField_3_tC662A46C5C7A580A44CDA5CC37C184F697745DE8* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.Vector2,System.Object,System.Single>::.ctor(System.Object,System.IntPtr)
@@ -9820,7 +9854,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -9847,11 +9881,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m6CC966A3298035E11DC7FE34F36B37925AD199DC_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -9883,25 +9919,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E591
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_Open(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenInst(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenStatic(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenVirtual(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenInterface(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_t478077F00037296FE66D39970EFC61848CA9A842* __this, BaseCompositeField_3_t77A0D5BF62E2DBDA80EF6F0C5DA7A92720E6852B* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.Vector2Int,System.Object,System.Int32>::.ctor(System.Object,System.IntPtr)
@@ -9917,7 +9963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -9944,11 +9990,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m9005AC78BA90E3E77F77E7E59121DAD8B914D62C_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -9980,25 +10028,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_Open(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenInst(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenStatic(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenVirtual(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenInterface(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_t22C249867E3E5CDDA4153439948FB42B517318D8* __this, BaseCompositeField_3_t102A225EC146132503362DA1B94ACAFE2C00E75E* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.Vector3,System.Object,System.Single>::.ctor(System.Object,System.IntPtr)
@@ -10014,7 +10072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -10041,11 +10099,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_mB0217EFA44EE30E04DDCF94E17208A8FE8C08B8D_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -10077,25 +10137,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E8
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_Open(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenInst(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenStatic(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenVirtual(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenInterface(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_t03680BCCA9C908F34C7C0685DDE1EA6003FFAEF0* __this, BaseCompositeField_3_tD55C4350D96CC3614F8F5763E63EC32CA9B02628* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.Vector3Int,System.Object,System.Int32>::.ctor(System.Object,System.IntPtr)
@@ -10111,7 +10181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -10138,11 +10208,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m0EA0AF71E8E71BB2C713A676E841505FCDD5AFC8_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -10174,25 +10246,35 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B0
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___compositeField0, ___field1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_Open(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenInst(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
+{
+	NullCheck(___compositeField0);
+	typedef void (*FunctionPointerType) (BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
+}
+void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenStatic(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D*, RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___compositeField0, ___field1, method);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenVirtual(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenInterface(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenGenericVirtual(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenGenericInterface(RegisterSerializedPropertyBindCallback_3_t3DD70F76FF4B77852F1D07CBD0100A8CA483E7A8* __this, BaseCompositeField_3_t8712C6D645DE8D10AE9124B4FFB8778D8EB7F40D* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1< RuntimeObject* >::Invoke(method, ___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<UnityEngine.Vector4,System.Object,System.Single>::.ctor(System.Object,System.IntPtr)
@@ -10208,7 +10290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_Open;
+			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -10235,11 +10317,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_Open;
+				__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m3125888DFAB49725F386FFF0B00AFC9CD9151482_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
@@ -10285,22 +10369,27 @@ void RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028A
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028AB93D3B08078649_OpenInstInvoker(RegisterSerializedPropertyBindCallback_3_t0C18B126442350779B5EAF041A113DC3578A2A15* __this, /*UnityEngine.UIElements.BaseCompositeField`3<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,System.Object,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>*/BaseCompositeField_3_tC755752B71FCEB8E419EAE0F0C2F51EFC8B00053* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InvokerActionInvoker1< RuntimeObject* >::Invoke(__this->___method_ptr_0, method, ___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028AB93D3B08078649_OpenVirtualInvoker(RegisterSerializedPropertyBindCallback_3_t0C18B126442350779B5EAF041A113DC3578A2A15* __this, /*UnityEngine.UIElements.BaseCompositeField`3<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,System.Object,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>*/BaseCompositeField_3_tC755752B71FCEB8E419EAE0F0C2F51EFC8B00053* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	VirtualActionInvoker1Invoker< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), (RuntimeObject*)___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028AB93D3B08078649_OpenInterfaceInvoker(RegisterSerializedPropertyBindCallback_3_t0C18B126442350779B5EAF041A113DC3578A2A15* __this, /*UnityEngine.UIElements.BaseCompositeField`3<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,System.Object,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>*/BaseCompositeField_3_tC755752B71FCEB8E419EAE0F0C2F51EFC8B00053* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	InterfaceActionInvoker1Invoker< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), (RuntimeObject*)___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028AB93D3B08078649_OpenGenericVirtualInvoker(RegisterSerializedPropertyBindCallback_3_t0C18B126442350779B5EAF041A113DC3578A2A15* __this, /*UnityEngine.UIElements.BaseCompositeField`3<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,System.Object,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>*/BaseCompositeField_3_tC755752B71FCEB8E419EAE0F0C2F51EFC8B00053* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericVirtualActionInvoker1Invoker< RuntimeObject* >::Invoke(method, (RuntimeObject*)___compositeField0, ___field1);
 }
 void RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028AB93D3B08078649_OpenGenericInterfaceInvoker(RegisterSerializedPropertyBindCallback_3_t0C18B126442350779B5EAF041A113DC3578A2A15* __this, /*UnityEngine.UIElements.BaseCompositeField`3<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,System.Object,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>*/BaseCompositeField_3_tC755752B71FCEB8E419EAE0F0C2F51EFC8B00053* ___compositeField0, RuntimeObject* ___field1, const RuntimeMethod* method)
 {
+	NullCheck(___compositeField0);
 	GenericInterfaceActionInvoker1Invoker< RuntimeObject* >::Invoke(method, (RuntimeObject*)___compositeField0, ___field1);
 }
 // System.Void UnityEngine.UIElements.RegisterSerializedPropertyBindCallback`3<Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType,System.Object,Unity.IL2CPP.Metadata.__Il2CppFullySharedGenericType>::.ctor(System.Object,System.IntPtr)
@@ -10345,6 +10434,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RegisterSerializedPropertyBindCallback_3
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)&RegisterSerializedPropertyBindCallback_3_Invoke_m2DAF30E63832337ED01BBC028AB93D3B08078649_ClosedInstInvoker;
 		}
 	}
@@ -23495,7 +23586,12 @@ void SpanAction_2_Invoke_m761FF4012DB09668C6A5AA76774E9F04199D212E_Multicast(Spa
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___span0, ___arg1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void SpanAction_2_Invoke_m761FF4012DB09668C6A5AA76774E9F04199D212E_Open(SpanAction_2_t65B015FEFE1F64814AC2EFA0E19A38B1CFC53178* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___span0, ValueTuple_3_tFD2ADB3DA89E958885034AAFEF1ABDA8C814D987 ___arg1, const RuntimeMethod* method)
+void SpanAction_2_Invoke_m761FF4012DB09668C6A5AA76774E9F04199D212E_OpenInst(SpanAction_2_t65B015FEFE1F64814AC2EFA0E19A38B1CFC53178* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___span0, ValueTuple_3_tFD2ADB3DA89E958885034AAFEF1ABDA8C814D987 ___arg1, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D, ValueTuple_3_tFD2ADB3DA89E958885034AAFEF1ABDA8C814D987, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___span0, ___arg1, method);
+}
+void SpanAction_2_Invoke_m761FF4012DB09668C6A5AA76774E9F04199D212E_OpenStatic(SpanAction_2_t65B015FEFE1F64814AC2EFA0E19A38B1CFC53178* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___span0, ValueTuple_3_tFD2ADB3DA89E958885034AAFEF1ABDA8C814D987 ___arg1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D, ValueTuple_3_tFD2ADB3DA89E958885034AAFEF1ABDA8C814D987, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___span0, ___arg1, method);
@@ -23513,7 +23609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpanAction_2__ctor_m4BBCE8F9C0E8FCC935E1
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&SpanAction_2_Invoke_m761FF4012DB09668C6A5AA76774E9F04199D212E_Open;
+			__this->___invoke_impl_1 = (intptr_t)&SpanAction_2_Invoke_m761FF4012DB09668C6A5AA76774E9F04199D212E_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -23522,6 +23618,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpanAction_2__ctor_m4BBCE8F9C0E8FCC935E1
 	}
 	else
 	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}
@@ -23552,7 +23650,12 @@ void SpanAction_2_Invoke_m65D110A8BF9027F070FA8CF53AF75D47A98C6E2A_Multicast(Spa
 		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___span0, ___arg1, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 }
-void SpanAction_2_Invoke_m65D110A8BF9027F070FA8CF53AF75D47A98C6E2A_Open(SpanAction_2_t84FDFFEECCC96A9A407DCB490E60340E38185947* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___span0, ValueTuple_5_t558B9F95CA55DE5694FC58A3BEAE441BF728FB57 ___arg1, const RuntimeMethod* method)
+void SpanAction_2_Invoke_m65D110A8BF9027F070FA8CF53AF75D47A98C6E2A_OpenInst(SpanAction_2_t84FDFFEECCC96A9A407DCB490E60340E38185947* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___span0, ValueTuple_5_t558B9F95CA55DE5694FC58A3BEAE441BF728FB57 ___arg1, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D, ValueTuple_5_t558B9F95CA55DE5694FC58A3BEAE441BF728FB57, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___span0, ___arg1, method);
+}
+void SpanAction_2_Invoke_m65D110A8BF9027F070FA8CF53AF75D47A98C6E2A_OpenStatic(SpanAction_2_t84FDFFEECCC96A9A407DCB490E60340E38185947* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___span0, ValueTuple_5_t558B9F95CA55DE5694FC58A3BEAE441BF728FB57 ___arg1, const RuntimeMethod* method)
 {
 	typedef void (*FunctionPointerType) (Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D, ValueTuple_5_t558B9F95CA55DE5694FC58A3BEAE441BF728FB57, const RuntimeMethod*);
 	((FunctionPointerType)__this->___method_ptr_0)(___span0, ___arg1, method);
@@ -23570,7 +23673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpanAction_2__ctor_m52B80F2401AFC1EDA0C9
 	{
 		bool isOpen = parameterCount == 2;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&SpanAction_2_Invoke_m65D110A8BF9027F070FA8CF53AF75D47A98C6E2A_Open;
+			__this->___invoke_impl_1 = (intptr_t)&SpanAction_2_Invoke_m65D110A8BF9027F070FA8CF53AF75D47A98C6E2A_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -23579,6 +23682,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpanAction_2__ctor_m52B80F2401AFC1EDA0C9
 	}
 	else
 	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 	}
@@ -23640,6 +23745,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpanAction_2__ctor_mDA3D51C491A1F13D8CC1
 	}
 	else
 	{
+		if (___object0 == NULL)
+			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)&SpanAction_2_Invoke_m4E51CE671BDBB67F3A2E93DA5AA706A80D9F166C_ClosedInstInvoker;
 	}
 	__this->___extra_arg_5 = (intptr_t)&SpanAction_2_Invoke_m4E51CE671BDBB67F3A2E93DA5AA706A80D9F166C_Multicast;

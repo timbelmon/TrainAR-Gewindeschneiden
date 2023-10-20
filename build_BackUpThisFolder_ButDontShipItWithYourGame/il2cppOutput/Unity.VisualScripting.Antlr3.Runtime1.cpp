@@ -1913,25 +1913,35 @@ RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_M
 	}
 	return retVal;
 }
-RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_Open(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
+RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenInst(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
+{
+	NullCheck(___o0);
+	typedef RuntimeObject* (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___o0, method);
+}
+RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenStatic(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
 {
 	typedef RuntimeObject* (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___method_ptr_0)(___o0, method);
 }
 RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenVirtual(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
 {
+	NullCheck(___o0);
 	return VirtualFuncInvoker0< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), ___o0);
 }
 RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenInterface(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
 {
+	NullCheck(___o0);
 	return InterfaceFuncInvoker0< RuntimeObject* >::Invoke(il2cpp_codegen_method_get_slot(method), il2cpp_codegen_method_get_declaring_type(method), ___o0);
 }
 RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenGenericVirtual(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
 {
+	NullCheck(___o0);
 	return GenericVirtualFuncInvoker0< RuntimeObject* >::Invoke(method, ___o0);
 }
 RuntimeObject* ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenGenericInterface(ProcessHandler_t998EC2E63E9F33809DC2A10E945796B4A384F402* __this, RuntimeObject* ___o0, const RuntimeMethod* method)
 {
+	NullCheck(___o0);
 	return GenericInterfaceFuncInvoker0< RuntimeObject* >::Invoke(method, ___o0);
 }
 // System.Void Unity.VisualScripting.Antlr3.Runtime.Tree.RewriteRuleSubtreeStream/ProcessHandler::.ctor(System.Object,System.IntPtr)
@@ -1947,7 +1957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProcessHandler__ctor_m84789C054378ED9ECF
 	{
 		bool isOpen = parameterCount == 1;
 		if (isOpen)
-			__this->___invoke_impl_1 = (intptr_t)&ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_Open;
+			__this->___invoke_impl_1 = (intptr_t)&ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenStatic;
 		else
 			{
 				__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
@@ -1974,11 +1984,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProcessHandler__ctor_m84789C054378ED9ECF
 			}
 			else
 			{
-				__this->___invoke_impl_1 = (intptr_t)&ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_Open;
+				__this->___invoke_impl_1 = (intptr_t)&ProcessHandler_Invoke_mD0D7D6FDE173A7DE2C5ECBCFDB863000188E00F4_OpenInst;
 			}
 		}
 		else
 		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
 		}
