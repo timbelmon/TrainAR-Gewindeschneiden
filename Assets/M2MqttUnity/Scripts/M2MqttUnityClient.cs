@@ -28,6 +28,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
+using Unity.VisualScripting;
 
 /// <summary>
 /// Adaptation for Unity of the M2MQTT library (https://github.com/eclipse/paho.mqtt.m2mqtt),
@@ -71,6 +72,7 @@ namespace M2MqttUnity
         private bool mqttClientConnectionClosed = false;
         private bool mqttClientConnected = false;
 
+
         /// <summary>
         /// Event fired when a connection is successfully established
         /// </summary>
@@ -87,7 +89,9 @@ namespace M2MqttUnity
         {
             if (client == null || !client.IsConnected)
             {
+                Debug.Log("Trying to do DoConnect...");
                 StartCoroutine(DoConnect());
+                
             }
         }
 
@@ -174,18 +178,34 @@ namespace M2MqttUnity
         /// </summary>
         protected virtual void Start()
         {
+
             if (autoConnect)
             {
                 Connect();
             }
         }
 
+
+
+        private void OnTopicChangedHandler(string newTopic)
+        {
+            Debug.Log("Topic changed: " + newTopic);
+        }
+
+        private void OnMessageChangedHandler(string newMessage)
+        {
+            Debug.Log("Message changed: " + newMessage);
+        }
         /// <summary>
         /// Override this method for each received message you need to process.
         /// </summary>
         protected virtual void DecodeMessage(string topic, byte[] message)
         {
             Debug.LogFormat("Message received on topic: {0}", topic);
+            string decodedMessage = System.Text.Encoding.UTF8.GetString(message);
+            // Trigger the custom event passing the decoded topic and message
+            //CustomEvent.Trigger(gameObject, "OnMessageDecoded", topic, decodedMessage);
+            // Debug.Log("Here is the messsage: " + decodedMessage);
         }
 
         /// <summary>
@@ -218,6 +238,7 @@ namespace M2MqttUnity
             // process messages in the main queue
             SwapMqttMessageQueues();
             ProcessMqttMessageBackgroundQueue();
+          
             // process messages income in the meanwhile
             SwapMqttMessageQueues();
             ProcessMqttMessageBackgroundQueue();
@@ -228,7 +249,19 @@ namespace M2MqttUnity
                 OnConnectionLost();
             }
         }
-
+        /*
+        private void ProcessMqttMessageBackgroundQueue_TrainAR(string topicToLookFor, string messageToLookFor)
+        {
+            foreach (MqttMsgPublishEventArgs msg in backMessageQueue)
+            {
+                if(msg.Topic == topicToLookFor && msg.Message = messageToLookFor)
+                {
+                    Debug.Log("Success!!!!");
+                }
+            }
+            backMessageQueue.Clear();
+        }
+        */
         private void ProcessMqttMessageBackgroundQueue()
         {
             foreach (MqttMsgPublishEventArgs msg in backMessageQueue)
@@ -250,6 +283,15 @@ namespace M2MqttUnity
         private void OnMqttMessageReceived(object sender, MqttMsgPublishEventArgs msg)
         {
             frontMessageQueue.Add(msg);
+            Debug.Log("Testing Message Received");
+            string decodedMessage = System.Text.Encoding.UTF8.GetString(msg.Message);
+            Debug.Log("Here is the messsage: " + decodedMessage);
+            List<string> message_and_topic = new List<string>();
+            message_and_topic.Add(msg.Topic);
+            message_and_topic.Add(decodedMessage);
+            //CustomEvent.Trigger(gameObject, "OnMessageDecoded", msg.Topic, decodedMessage);
+            EventBus.Trigger(EventNames.Topic_of_Message, message_and_topic);
+            
         }
 
         private void OnMqttConnectionClosed(object sender, EventArgs e)
@@ -277,8 +319,9 @@ namespace M2MqttUnity
                 {
 #if (!UNITY_EDITOR && UNITY_WSA_10_0 && !ENABLE_IL2CPP)
                     client = new MqttClient(brokerAddress,brokerPort,isEncrypted, isEncrypted ? MqttSslProtocols.SSLv3 : MqttSslProtocols.None);
-#else
+#else 
                     client = new MqttClient(brokerAddress, brokerPort, isEncrypted, null, null, isEncrypted ? MqttSslProtocols.SSLv3 : MqttSslProtocols.None);
+                    Debug.Log("Creating new client");
                     //System.Security.Cryptography.X509Certificates.X509Certificate cert = new System.Security.Cryptography.X509Certificates.X509Certificate();
                     //client = new MqttClient(brokerAddress, brokerPort, isEncrypted, cert, null, MqttSslProtocols.TLSv1_0, MyRemoteCertificateValidationCallback);
 #endif
