@@ -111,9 +111,10 @@ public class MQTT_Client : M2MqttUnityClient
         Debug.Log("Debug objects: " + topic_debug + message_debug);
         string topic_debug_string = topic_debug.text;
         string message_debug_string = message_debug.text;
+	string trimmed_message = message_debug_string.Replace("\u200B","");
         List<string> debug_MQTT = new List<string>();
         debug_MQTT.Add(topic_debug_string);
-        debug_MQTT.Add(message_debug_string);
+        debug_MQTT.Add(trimmed_message);
         EventBus.Trigger(EventNames.Topic_of_Message, debug_MQTT);
     }
 
